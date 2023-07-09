@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(255, 255, 255);
+
+}
+
+#main{
+
+    width: 100%;
+    height: 90vh;
+    background-image: url('/images/backpage.png');
+    background-repeat: no-repeat;
+    background-position:center;
+
+    display: flex;
+    justify-content: start;
+}
+
+#crud{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+#createa{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px grey;
+    border-radius: 5px;
+    width: 450px;
+    padding: 5px;
+
+
+}
+
+#createa img{
+    width: 180px;
+}
+
+
+#read{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -2px -2px grey;
+    border-radius: 5px;
+
+}
+
+#read img{
+    width: 180px;
+}
+
+#delete{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px -2px grey;
+    border-radius: 5px;
+}
+
+#delete img{
+    width: 180px;
+}
+
+#homebut{
+    background-color: rgb(0, 111, 9);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    width: 200px;
+}

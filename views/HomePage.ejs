@@ -1,0 +1,38 @@
+<%- include('NavBar') %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/css/homepage.css">
+</head>
+
+<body>
+    <div id="main">
+
+        <div id="crud">
+
+            <div id="createa">
+                <img src="/images/createlogo.png" alt="">
+                <button id="homebut"  onclick="window.location.href='/create-page' ">Create</button id="homebut">
+            </div>
+
+
+            <div id="read">
+                <img src="/images/readlogo.png" alt="">
+                <button id="homebut" onclick="window.location.href='/read-page' ">Read</button id="homebut">
+            </div>
+            
+            <div id="delete">
+                <img src="/images/deletelogo.png" alt="">
+                <button id="homebut" onclick="window.location.href='/delete-page' ">Delete</button id="homebut">
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

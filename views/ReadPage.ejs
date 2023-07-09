@@ -1,0 +1,36 @@
+<%- include('NavBar') %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Page</title>
+    <link rel="stylesheet" href="/css/readpage.css">
+</head>
+<body>
+
+    <br>
+    <div id="home-data">
+
+        <% for(const data of fetchdata) {%>
+        <div id="home-data-box">
+                <div id="head"><%= data.Title %></div>
+                <img id="home-data-img" src="<%= data.Image[0] %>" alt="Wrong Image Url">
+
+                <div id="buttonpart">
+                    
+                    <button onclick="window.location.href='/content-page/<%= data.id %>'" >Read</button>
+                    <button onclick="window.location.href='/delete-blog/<%= data.id %>'">Delete</button>
+                </div>
+
+        </div>
+        <%}%>
+
+    </div>
+
+    
+   
+
+</body>
+</html>

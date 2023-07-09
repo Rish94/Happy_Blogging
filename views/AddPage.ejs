@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creation-Page</title>
+    <link rel="stylesheet" href="/css/addpage.css">
+</head>
+<body>
+        <div id="createsection">
+            <form id="createform" method="POST" action="/create-page">
+
+                <label id="label" for="">FirstName:</label>
+                <input name="fname"  placeholder="Enter FirstName" type="text">
+
+                <label id="label" for="">LastName</label>
+                <input name="lname" placeholder="Enter LastName" type="text">
+
+                <label id="label" for="">Email</label>
+                <input name="email" placeholder="Enter Email" type="email">
+                
+                <label id="label" for="">BlogTitle</label>
+                <input name="blogtitle" placeholder="Enter Title" type="text">
+
+                <label id="label" for="">SubTitle</label>
+                <input name="subtitle" placeholder="Enter Subtitle" type="text">
+
+                <label id="label" for="">Description</label>
+                <textarea  name="descrp" placeholder="Enter Description" rows="5" cols="50"></textarea>
+
+                <label id="label" for="">Image1</label>
+                <input name="img1" placeholder="Enter Image1 Link" type="text">
+
+                <label id="label" for="">Image2</label>
+                <input name="img2" placeholder="Enter Image2 Link" type="text">
+                
+                <label id="label" for="">Image3</label>
+                <input name="img3"placeholder="Enter Image3 Link" type="text">
+                
+                <label id="label" for="">Image4</label>
+                <input name="img4" placeholder="Enter Image4 Link" type="text">
+                
+                <label id="label" for="">CreatorName</label>
+                <input name="creatname" placeholder="Enter CreatorName" type="text">
+
+                <br>
+                <input id="addbut" type="submit" value="Submit">
+
+
+            </form>
+        </div>
+</body>
+</html>

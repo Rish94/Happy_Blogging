@@ -1,0 +1,57 @@
+#content-main{
+    background-image: radial-gradient(white,rgb(241, 242, 241));
+    padding: 10px;
+}
+
+#blog-heading{
+    border-radius: 10px;
+    background-color: #1D5B79;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+}
+
+#blog-subtitle{
+    margin-top: 5px;
+    background-color: #468B97;
+    padding: 3px;
+    border-radius: 10px;
+    color: white;
+    font-family:'Times New Roman', Times, serif ;
+}
+
+#blog-description{
+    margin-top: 5px;
+    background-color: #EF6262;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+#blog-creator{
+    margin-top: 5px;
+    background-color: #F3AA60;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#content-images{
+    /* border: 1px solid crimson; */
+
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+
+}
+
+#content-images img{
+    width: 20vw;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgb(0, 111, 9),-2px -2px rgb(0, 111, 9);
+}

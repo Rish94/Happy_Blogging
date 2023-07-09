@@ -1,0 +1,59 @@
+<%- include('NavBar') %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Page</title>
+    <link rel="stylesheet" href="/css/contentpage.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+
+    <br>
+    <div id="content-main">
+
+        <div id="blog-heading">
+            <%= Contentdata.Title %>
+                <i class='fas fa-comments' style="color: white;display:block;float:right;">&#x2709;</i>
+        </div>
+
+        <br>
+        <span style="color: rgb(0, 111, 9);font-family:fantasy">SubTitle: </span>
+        <div id="blog-subtitle">
+            <%= Contentdata.Subtitle %>
+        </div>
+        <br>
+
+        <span style="color: rgb(0, 111, 9);font-family:fantasy">Description: </span>
+        <div id="blog-description">
+            <%= Contentdata.Description %>
+        </div>
+        <br>
+        <div id="content-images">
+
+            <img src="<%= Contentdata.Image[0] %>" alt="">
+            <img src="<%= Contentdata.Image[1] %>" alt="">
+            <img src="<%= Contentdata.Image[2] %>" alt="">
+            <img src="<%= Contentdata.Image[3] %>" alt="">
+
+        </div>
+        <br>
+        <span style="color: rgb(0, 111, 9);font-family:fantasy"> Created By:</span>
+        <div id="blog-creator">
+            <span style="font-weight: bold;color:white">
+                <%= Contentdata.CreatorName %>
+            </span>
+            <i class='fas fa-comments'
+                style="color: red;display:block;float:right;background-color:white;border-radius:10px;padding:1px">&#xa9;</i>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
