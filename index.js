@@ -9,6 +9,7 @@ mongo.connect("mongodb+srv://rishabhagarwal8444:Rish844541@cluster0.qdyyhdi.mong
 })
 
 const schema = mongo.Schema({
+    _id:String,
     FirstName:String,
     LastName:String,
     Title:String,
@@ -23,7 +24,7 @@ const schema = mongo.Schema({
 const model = mongo.model('data',schema);
 
 
-const port = 5000;
+const port = 3500;
 
 app.set('view engine','ejs');
 app.use(express.static(path.join(__dirname,'public')));
