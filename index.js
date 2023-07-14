@@ -9,7 +9,6 @@ mongo.connect("mongodb+srv://rishabhagarwal8444:Rish844541@cluster0.qdyyhdi.mong
 })
 
 const schema = mongo.Schema({
-    _id:String,
     FirstName:String,
     LastName:String,
     Title:String,
